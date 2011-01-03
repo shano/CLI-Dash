@@ -1,0 +1,21 @@
+The tool is essentially a wee-little dashboard for your linux server. It only supports a few system details at present(essentially handy little things python does) but I'll add more as I get the time, if you've any suggestions let me know.
+
+Heres what it will check.
+
+* If a process you're interested in is running. I use this for lighttpd and mysql.
+* CPU Use
+* Memory Use
+* Internal IP
+* External IP
+( Free/Total Disk Space
+
+Installation:
+
+Basically do up the config file, put it somewhere then point to the config file from the main code. I actually execute it from my bashrc file, reason being is that typically when I need to ssh into my server it's to pull up one of these details.
+
+Here is the sample config file is here:
+
+running('apache')||running('mysqld')||running('stuff')
+ext_ip('')||int_ip('')
+free_space('')||total_space('')
+cpu_use('')||mem_use('')

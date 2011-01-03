@@ -1,0 +1,4 @@
+running('apache')||running('mysqld')||running('stuff')
+ext_ip('')||int_ip('')
+free_space('')||total_space('')
+cpu_use('')||mem_use('')
